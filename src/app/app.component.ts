@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Sach';
+  dataset: any = ['Sách nói', 'Sách chữ', 'Tác giả', 'Tên sách'];
 }
