@@ -24,7 +24,11 @@ import { AngularMaterialModule } from './angular-material/angular-material.modul
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FilterPipe } from './filter.pipe';
 // MDB Angular Free
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import {WavesModule, InputsModule, ButtonsModule, IconsModule} from 'angular-bootstrap-md';
+import { TaikhoanComponent } from './taikhoan/taikhoan.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -41,6 +45,7 @@ import {WavesModule, InputsModule, ButtonsModule, IconsModule} from 'angular-boo
     LoginComponent,
     RegisterComponent,
     FilterPipe,
+    TaikhoanComponent,
   ],
   imports: [
     BrowserModule,
@@ -61,6 +66,9 @@ import {WavesModule, InputsModule, ButtonsModule, IconsModule} from 'angular-boo
     InputsModule,
     ButtonsModule,
     IconsModule,
+    MatGridListModule,
+    MDBBootstrapModule.forRoot(),
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

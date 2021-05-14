@@ -8,6 +8,8 @@ import {ReviewsachComponent} from './reviewsach/reviewsach.component';
 import {SukiensachComponent} from './sukiensach/sukiensach.component';
 import {LoginComponent} from './login/login.component';
 import {RegisterComponent} from './register/register.component';
+import {FooterComponent} from './footer/footer.component';
+import {TaikhoanComponent} from './taikhoan/taikhoan.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -18,6 +20,8 @@ const routes: Routes = [
   {path: 'suck', component: SachnoiComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
+  {path: 'footer', component: FooterComponent},
+  {path: 'taikhoan', component: TaikhoanComponent},
   {path: '**', component: PnfoundComponent},
 ];
 
